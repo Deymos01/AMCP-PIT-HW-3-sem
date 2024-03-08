@@ -71,7 +71,7 @@ public:
 
     void print() const {
         for (size_t i = 0; i < sizeData; ++i) {
-            std::cout << static_cast<bool>(data[i]) << " \n"[i == sizeData - 1];
+            std::cout << data[i] << " \n"[i == sizeData - 1];
         }
     }
 
