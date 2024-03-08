@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/0CXhL0ol)
 # Разбиение числа
 
 Набор положительных чисел a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>k</sub> называется разбиением натурального числа[^1] n, если n = a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>k</sub>, где a<sub>1</sub> ⩾ a<sub>2</sub> ⩾...⩾ a<sub>k</sub> > 0.
