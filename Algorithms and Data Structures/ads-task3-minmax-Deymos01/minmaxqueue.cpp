@@ -1,7 +1,7 @@
 #include <fstream>
 #include <iostream>
 
-#include "queue.h"
+#include "monotonic_queue.h"
 
 int main(int argc, char *argv[]) {
     if (argc != 3) {
@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 
     int n;
     inFile >> n;
-    Queue<int> q;
+    monotonic_queue<int> q;
     for (int i = 0; i < n; ++i) {
         char command;
         inFile >> command;
