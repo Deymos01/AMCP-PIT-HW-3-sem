@@ -22,7 +22,7 @@ protected:
 public:
     monotonic_queue() = default;
 
-    void push(T elem) {
+    void push(const T& elem) {
         T min = Queue<std::pair<T, std::pair<T, T>>>::leftStack.is_empty() ? elem :
                 std::min(elem, Queue<std::pair<T, std::pair<T, T>>>::leftStack.top().second.first);
 

@@ -23,7 +23,7 @@ public:
         return leftStack.is_empty() && rightStack.is_empty();
     }
 
-    void push(T elem) {
+    void push(const T& elem) {
         leftStack.push(elem);
     }
 
