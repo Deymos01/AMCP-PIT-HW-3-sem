@@ -23,7 +23,19 @@ int main(int argc, char *argv[]) {
         inFile >> v[i].second;
     }
     inFile.close();
-    sort(v.begin(), v.end(), [](std::pair<int, double> a, std::pair<int, double> b) { return a.second < b.second; });
-    std::cout << v[0].first + 1 << " " << v[n / 2].first + 1 << " " << v[n - 1].first + 1 << "\n";
+    int medianIndex = n / 2;
+    int median = find_kth_smallest(v.begin(), v.end(), medianIndex,
+                                   [](const std::pair<int, double> &a, const std::pair<int, double> &b) -> bool {
+                                       return a.second < b.second;
+                                   })->first + 1;
+    int min = find_min(v.begin(), v.end(),
+                       [](const std::pair<int, double> &a, const std::pair<int, double> &b) -> bool {
+                           return a.second < b.second;
+                       })->first + 1;
+    int max = find_max(v.begin(), v.end(),
+                       [](const std::pair<int, double> &a, const std::pair<int, double> &b) -> bool {
+                           return a.second < b.second;
+                       })->first + 1;
+    std::cout << min << ' ' << median << ' ' << max << '\n';
     return 0;
 }
