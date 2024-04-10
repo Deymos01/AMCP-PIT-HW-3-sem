@@ -9,10 +9,11 @@
 template<typename T>
 class vector {
 private:
-    T *data;
     size_t sizeData;
     size_t capacity;
 public:
+    T *data; // Yeah, it's scary. Really scary.
+
     vector() : data(nullptr), sizeData(0), capacity(0) {}
 
     explicit vector(size_t n) : data(new T[n]), sizeData(n), capacity(n) {}
