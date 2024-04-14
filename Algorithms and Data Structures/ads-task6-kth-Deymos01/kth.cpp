@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
 
 //    clock_t start = clock();
     quickSortRange(vec, vec.begin(), vec.end() - 1, left, right);
-//    std::cout << "Time: " << (double)(clock() - start) / CLOCKS_PER_SEC << " s." << std::endl;
+//    std::cout << "Time: " << (double)(clock() - start) / CLOCKS_PER_SEC << "я s." << std::endl;
 //    std::cout << "Number of swaps: " << nSwaps << std::endl;
 //    std::cout << "Number of calls recursion: " << nCallRecursion << std::endl;
 
