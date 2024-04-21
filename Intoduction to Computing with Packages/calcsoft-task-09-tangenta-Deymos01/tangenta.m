@@ -22,5 +22,6 @@ function tangenta(fd, dmin, dmax, n)
     plot(xTagent, yTagent, 'LineWidth', 1.5);
     plot(x0, y0, 'marker', '.', 'markersize', 10, 'color', 'r');
     axis fill;
+    legend('function', 'tagent');
     hold off;
 endfunction
