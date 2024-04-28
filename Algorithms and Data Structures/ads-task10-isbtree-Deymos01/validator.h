@@ -25,7 +25,7 @@ private:
             return currLevel;
         }
         // Check bounds of the keys of curr node
-        // Если первый элемент данной ноды меньше текущего минимума или последний элемент данной ноды меньше текущего максимума
+        // Если первый элемент данной ноды меньше текущего минимума или последний элемент данной ноды больше текущего максимума
         if (nodes_[nodePos]->keys[0] < currMin || nodes_[nodePos]->keys[nNodeKeys - 1] > currMax) {
             isOK = false;
             return currLevel;
